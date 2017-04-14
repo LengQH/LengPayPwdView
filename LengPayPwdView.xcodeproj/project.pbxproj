@@ -13,6 +13,10 @@
 		04264BFB1CF0404E002A65F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04264BF91CF0404E002A65F5 /* Main.storyboard */; };
 		04264BFD1CF0404E002A65F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04264BFC1CF0404E002A65F5 /* Assets.xcassets */; };
 		04264C001CF0404E002A65F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04264BFE1CF0404E002A65F5 /* LaunchScreen.storyboard */; };
+		04264C0D1CF04110002A65F5 /* PayPwdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04264C0C1CF04110002A65F5 /* PayPwdView.m */; };
+		04264C151CF041BF002A65F5 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 04264C111CF041BF002A65F5 /* MBProgressHUD+MJ.m */; };
+		04264C161CF041BF002A65F5 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04264C121CF041BF002A65F5 /* MBProgressHUD.bundle */; };
+		04264C171CF041BF002A65F5 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 04264C141CF041BF002A65F5 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		04264BFC1CF0404E002A65F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04264BFF1CF0404E002A65F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04264C011CF0404E002A65F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04264C091CF04095002A65F5 /* MySetFile.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySetFile.pch; sourceTree = "<group>"; };
+		04264C0B1CF04110002A65F5 /* PayPwdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPwdView.h; sourceTree = "<group>"; };
+		04264C0C1CF04110002A65F5 /* PayPwdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayPwdView.m; sourceTree = "<group>"; };
+		04264C101CF041BF002A65F5 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		04264C111CF041BF002A65F5 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		04264C121CF041BF002A65F5 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		04264C131CF041BF002A65F5 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		04264C141CF041BF002A65F5 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +70,10 @@
 		04264BEF1CF0404E002A65F5 /* LengPayPwdView */ = {
 			isa = PBXGroup;
 			children = (
-				04264BF31CF0404E002A65F5 /* AppDelegate.h */,
-				04264BF41CF0404E002A65F5 /* AppDelegate.m */,
-				04264BF61CF0404E002A65F5 /* ViewController.h */,
-				04264BF71CF0404E002A65F5 /* ViewController.m */,
-				04264BF91CF0404E002A65F5 /* Main.storyboard */,
-				04264BFC1CF0404E002A65F5 /* Assets.xcassets */,
-				04264BFE1CF0404E002A65F5 /* LaunchScreen.storyboard */,
-				04264C011CF0404E002A65F5 /* Info.plist */,
+				04264C071CF04062002A65F5 /* Main */,
+				04264C0A1CF04110002A65F5 /* View */,
+				04264C081CF0406C002A65F5 /* Controller */,
+				04264C0E1CF0412E002A65F5 /* Other */,
 				04264BF01CF0404E002A65F5 /* Supporting Files */,
 			);
 			path = LengPayPwdView;
@@ -74,9 +82,61 @@
 		04264BF01CF0404E002A65F5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04264BFC1CF0404E002A65F5 /* Assets.xcassets */,
+				04264BFE1CF0404E002A65F5 /* LaunchScreen.storyboard */,
+				04264C011CF0404E002A65F5 /* Info.plist */,
 				04264BF11CF0404E002A65F5 /* main.m */,
+				04264C091CF04095002A65F5 /* MySetFile.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04264C071CF04062002A65F5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				04264BF31CF0404E002A65F5 /* AppDelegate.h */,
+				04264BF41CF0404E002A65F5 /* AppDelegate.m */,
+				04264BF91CF0404E002A65F5 /* Main.storyboard */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		04264C081CF0406C002A65F5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04264BF61CF0404E002A65F5 /* ViewController.h */,
+				04264BF71CF0404E002A65F5 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		04264C0A1CF04110002A65F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04264C0B1CF04110002A65F5 /* PayPwdView.h */,
+				04264C0C1CF04110002A65F5 /* PayPwdView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04264C0E1CF0412E002A65F5 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				04264C0F1CF041BF002A65F5 /* MBProgressHUD */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		04264C0F1CF041BF002A65F5 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				04264C101CF041BF002A65F5 /* MBProgressHUD+MJ.h */,
+				04264C111CF041BF002A65F5 /* MBProgressHUD+MJ.m */,
+				04264C121CF041BF002A65F5 /* MBProgressHUD.bundle */,
+				04264C131CF041BF002A65F5 /* MBProgressHUD.h */,
+				04264C141CF041BF002A65F5 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +170,7 @@
 				TargetAttributes = {
 					04264BEC1CF0404E002A65F5 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 4ETV77S77W;
 					};
 				};
 			};
@@ -137,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04264C001CF0404E002A65F5 /* LaunchScreen.storyboard in Resources */,
+				04264C161CF041BF002A65F5 /* MBProgressHUD.bundle in Resources */,
 				04264BFD1CF0404E002A65F5 /* Assets.xcassets in Resources */,
 				04264BFB1CF0404E002A65F5 /* Main.storyboard in Resources */,
 			);
@@ -150,8 +212,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				04264BF81CF0404E002A65F5 /* ViewController.m in Sources */,
+				04264C171CF041BF002A65F5 /* MBProgressHUD.m in Sources */,
+				04264C151CF041BF002A65F5 /* MBProgressHUD+MJ.m in Sources */,
 				04264BF51CF0404E002A65F5 /* AppDelegate.m in Sources */,
 				04264BF21CF0404E002A65F5 /* main.m in Sources */,
+				04264C0D1CF04110002A65F5 /* PayPwdView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +326,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4ETV77S77W;
+				GCC_PREFIX_HEADER = LengPayPwdView/MySetFile.pch;
 				INFOPLIST_FILE = LengPayPwdView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gdd.LengPayPwdView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +340,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4ETV77S77W;
+				GCC_PREFIX_HEADER = LengPayPwdView/MySetFile.pch;
 				INFOPLIST_FILE = LengPayPwdView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gdd.LengPayPwdView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,6 +369,7 @@
 				04264C061CF0404E002A65F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

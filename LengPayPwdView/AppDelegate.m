@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  LengPayPwdView
 //
-//  Created by ma c on 16/5/21.
+//  Created by 冷求慧 on 16/5/21.
 //  Copyright © 2016年 gdd. All rights reserved.
 //
 
